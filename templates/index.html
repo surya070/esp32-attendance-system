@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Attendance Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">ESP32 Attendance</a>
+    <div>
+      <a href="/attendance" class="btn btn-outline-light btn-sm me-2">View Attendance</a>
+      <a href="/download" class="btn btn-success btn-sm">Download CSV</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center mt-4">
+  <h2 class="mb-3">📸 Live Camera Feed</h2>
+  <img src="{{ url_for('video_feed') }}" class="img-fluid rounded shadow" alt="Live Feed" style="max-width: 80%;">
+  <p class="mt-3 text-muted">Frames processed automatically from ESP32-CAM</p>
+
+  <div class="mt-4 p-3 bg-white shadow rounded">
+    <h4>Today's Attendance: <span class="text-success">{{ count_today }}</span></h4>
+  </div>
+</div>
+</body>
+</html>
