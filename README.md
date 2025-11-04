@@ -24,7 +24,7 @@ It’s lightweight, runs on affordable hardware, and brings together **IoT, Comp
 
 ## 🖼️ System Architecture
 
-```
+
 
 ```
  ┌────────────────────┐
@@ -46,7 +46,7 @@ It’s lightweight, runs on affordable hardware, and brings together **IoT, Comp
  └────────────────────┘
 ```
 
-````
+
 
 ---
 
