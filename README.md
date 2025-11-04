@@ -66,10 +66,9 @@ It’s lightweight, runs on affordable hardware, and brings together **IoT, Comp
 
 ### 1️⃣ ESP32-Cam Firmware Upload
 1. Open **Arduino IDE**.  
-2. Load the example **File → Examples → ESP32 → Camera → CameraWebServer**.  
-3. Replace Wi-Fi credentials and server IP with your Flask server IP.  
-4. Comment out extra `startCameraServer()` definitions (if present).  
-5. Upload to your ESP32-Cam board.
+2. Load the folder **esp32-cam**.  
+3. Replace Wi-Fi credentials and server IP with your Flask server IP.    
+4. Upload to your ESP32-Cam board.
 
 ### 2️⃣ Flask Server Setup
 ```bash
