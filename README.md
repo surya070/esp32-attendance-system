@@ -1,23 +1,20 @@
-```markdown
-# 📸 Smart Attendance System using ESP32-Cam and Flask
+# Smart Attendance System using ESP32-Cam and Flask
 
-> 🚀 A modern IoT-based **Smart Attendance System** that captures images using an **ESP32-Cam**, detects faces using a **Flask backend**, and maintains real-time attendance records viewable through a sleek web dashboard.
+> A modern IoT-based **Smart Attendance System** that captures images using an **ESP32-Cam**, detects faces using a **Flask backend**, and maintains real-time attendance records viewable through a sleek web dashboard.
 
 ---
 
-## 🧠 Project Overview
+##  Project Overview
 
 This project transforms a simple ESP32-Cam into an intelligent attendance monitoring system.  
 Whenever motion is detected, the ESP32-Cam captures an image and sends it to a Flask web server, where face detection and attendance logging occur automatically.
-
 It’s lightweight, runs on affordable hardware, and brings together **IoT, Computer Vision, and Web Technologies** to demonstrate a real-world smart automation solution.
 
 ---
 
-## 🎯 Key Features
+##  Key Features
 
-- **ESP32-Cam Integration** – Streams video or sends captured images to the server.  
-- **Motion-Triggered Attendance** – Detects movement and automatically triggers attendance capture.  
+- **ESP32-Cam Integration** – Sends captured images to the server.    
 - **Flask Web Server** – Handles image uploads, processes detection, and maintains attendance records.  
 - **Web Dashboard** – Clean HTML interface to view real-time attendance logs.  
 - **Local or Network Deployment** – Works on local Wi-Fi or can be hosted on a remote server.  
@@ -76,9 +73,10 @@ It’s lightweight, runs on affordable hardware, and brings together **IoT, Comp
 
 ### 2️⃣ Flask Server Setup
 ```bash
-git clone https://github.com/<your-username>/smart-attendance-system.git
-cd smart-attendance-system
+git clone https://github.com/surya070/esp32-attendance-system.git
+cd esp32-attendance-system
 pip install -r requirements.txt
+cd backend
 python app.py
 ````
 
@@ -86,23 +84,7 @@ Then visit `http://localhost:5000` or your local IP on another device in the sam
 
 ---
 
-## 💻 Folder Structure
 
-```
-smart-attendance-system/
-│
-├── app.py                  # Flask backend
-├── templates/
-│   ├── index.html          # Dashboard homepage
-│   ├── attendance.html     # Attendance view page
-│
-├── static/
-│   ├── uploads/            # Captured images
-│   └── style.css           # Basic UI styling
-│
-├── attendance.csv          # Logged attendance records
-└── README.md
-```
 <img width="2497" height="1049" alt="image" src="https://github.com/user-attachments/assets/76071fa5-d02f-4c07-aea1-5f6b91a75f30" />
 
 <img width="2490" height="1022" alt="image" src="https://github.com/user-attachments/assets/ca75c1db-f007-4c86-8465-7f491996bdd0" />
